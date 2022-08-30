@@ -3,7 +3,10 @@ let titles = ["Order for Food", "Easy Payment", "Fast Delivery"];
 let texts = ["Order some food and be happy! Because it is yummy Order some food and be happy!", "Order some food and be happy! Because it is yummy Order some food and be happy!", "Order some food and be happy! Because it is yummy Order some food and be happy!"];
 function pageSwitch(){
 	let nextPage = numericOfImages.indexOf( document.getElementById("image").className.substr(6) ) + 1;
-	if(nextPage > 2){
+	if( arguments.length != 0 ){
+		nextPage = arguments[0] - 1;
+	}
+	else if(nextPage > 2){
 		nextPage = 0;
 	}
 	document.getElementById("image").className = document.getElementById("image").className.split(" ")[0] + " " + numericOfImages[nextPage];
