@@ -64,3 +64,6 @@
 .third {
 	background-image: url("images/03.png");
 }
+button:visited{
+	border-width: 0px;
+}
