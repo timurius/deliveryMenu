@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=450">
 	<title>Welcome!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
@@ -13,32 +13,36 @@
 	</div>
 	<div class="content2" style="display: block;">
 		<div id="slider" class="slider">
-		<div class="slider__content">
-			<div id="slider__body" class="slider__body" style="left: 0px;">
-				<img src="images/01.png" alt="" class="slider__image">
-				<img src="images/02.png" alt="" class="slider__image">
-				<img src="images/03.png" alt="" class="slider__image">	
+			<div class="slider__content">
+				<div id="slider__body" class="slider__body" style="left: 0px;">
+					<img src="images/01.png" alt="" class="slider__image">
+					<img src="images/02.png" alt="" class="slider__image">
+					<img src="images/03.png" alt="" class="slider__image">	
+				</div>
 			</div>
+		</div>
+		<div class="text-content">
+			<p id="title" class="text-conent__title">Order for Food</p>
+			<div class="text-content__info">
+				<p id="text" class="text-content__text">
+					Order some food and be happy!
+					Because it is yummy
+					Order some food and be happy!</p>
+			</div>
+		</div>
+		<div class="bottom-content">
+			<div class="page-switcher">
+			<button id="page-switcher-01" class="page-switcher__button_selected" onclick="slider(1)" ></button>
+			<button id="page-switcher-02" class="page-switcher__button" onclick="slider(2)"></button>
+			<button id="page-switcher-03" class="page-switcher__button" onclick="slider(3)"></button>
+		</div>
+		<div class="button-container">
+			<button id="next" class="next-button" onclick="slider()">Next</button>
+		</div>
 		</div>
 		
 	</div>
-	<div class="text-content">
-		<p id="title" class="text-conent__title">Order for Food</p>
-		<div class="text-content__info"><p id="text" class="text-content__text">
-		Order some food and be happy!
-		Because it is yummy
-		Order some food and be happy!</p></div>
-	</div>
-	<div class="page-switcher">
-		<button id="page-switcher-01" class="page-switcher__button_selected" onclick="slider(1)" ></button>
-		<button id="page-switcher-02" class="page-switcher__button" onclick="slider(2)"></button>
-		<button id="page-switcher-03" class="page-switcher__button" onclick="slider(3)"></button>
-	</div>
-	<div class="button-container">
-		<button id="next" class="next-button" onclick="slider()">Next</button>
-	</div>
 		
-	</div>
 	<div class="content3" style="display: none;">
 		
 	</div>

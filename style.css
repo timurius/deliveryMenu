@@ -1,6 +1,15 @@
+body{
+	margin: 0px;		
+	padding: 0px;
+	display: inline;
+}
+.container{
+  height: 100vh;
+}
 .slider {
 	text-align: center;
 	width: 100%;
+	position: relative;
 }	
 .slider__content {
 	width: 428px;
@@ -15,18 +24,22 @@
 	display: flex;
 	position: relative;
 }
-.slider__image {}
+.slider__image {
+
+}
 .text-content {
 	max-width: 100%;
 	text-align: center;
 	font-family: sans-serif;
 	white-space: normal; 
+	margin-top: 20%;
 }
 .text-conent__title {
 	font-weight: bold;
 	color: #3bc769;
 	font-size: 45px;
-	margin: 0;
+	margin: auto;
+	width: 400px;
 }
 .text-content__info {
 	text-align: center;
@@ -36,6 +49,7 @@
 	text-align: center;
 	margin: 10px 0px;
 	cursor: default;
+
 }
 .page-switcher__button {
 	border-radius: 30px;
@@ -49,6 +63,14 @@
 	border-width: 0px;
 	padding: 5px 10px;
 }
+.bottom-content {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.button-container {
+	
+}
 .next-button {
 	background-color: #1bac4b;
 	border-width: 0px;
@@ -56,26 +78,25 @@
 	width: 300px;
 	padding: 10px 0px;
 	color: #fff;
-}
-.button-container {
-	width: 100%;
-	text-align: center;
-	margin: 20px 0px;
+	margin: 20px auto;
+	position: relative;
+	display: block;
 }
 .text-content__text {
 	text-align: center;
-	max-width: 400px;
+	width: 400px;
 	display: inline-block;
-}
-.first {
-	background-image: url("images/01.png");
-}
-.second {
-	background-image: url("images/02.png");
-}
-.third {
-	background-image: url("images/03.png");
+	text-align: center;
 }
 button:visited{
 	border-width: 0px;
+}
+.content2 {
+	max-width: 450px;
+	margin: auto;
+}
+@media (max-height: 800px){
+	.text-content{
+		margin: 0px;
+	}
 }
