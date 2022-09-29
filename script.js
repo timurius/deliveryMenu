@@ -5,6 +5,11 @@ let texts = ["Order some food and be happy! Because it is yummy Order some food 
 let sliderProcess = false;
 let currentSlide = 0;
 
+function backToSlider(){
+	document.getElementById("content2").style.display = "block";
+	document.getElementById("content2__bottom-content").style.display = "block";
+}
+
 function slider(){
 	if(sliderProcess == true){
 		return;
@@ -23,6 +28,14 @@ function slider(){
 	else{
 		nextSlide = (-1 * leftOfImage + 428) / 428;
 	}
+	if (nextSlide == 3) {
+		document.getElementById("content2").style.display = "none";
+		document.getElementById("content2__bottom-content").style.display = "none";
+		document.getElementById("slider__body").style.left = 0 + "px" 
+		document.getElementById("content3").style.display = "block";
+		return;
+	}
+	console.log(nextSlide);
 	let a = nextSlide - currentSlide;
 	console.log(a);
 	let distance = -428 * a;

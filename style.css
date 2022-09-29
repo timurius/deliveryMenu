@@ -1,7 +1,6 @@
 body{
 	margin: 0px;		
 	padding: 0px;
-	display: inline;
 }
 .container{
   height: 100vh;
@@ -49,7 +48,8 @@ body{
 	text-align: center;
 	margin: 10px 0px;
 	cursor: default;
-
+	position: relative;
+	display: block;
 }
 .page-switcher__button {
 	border-radius: 30px;
@@ -67,9 +67,7 @@ body{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-}
-.button-container {
-	
+	display: block;
 }
 .next-button {
 	background-color: #1bac4b;
@@ -95,8 +93,52 @@ button:visited{
 	max-width: 450px;
 	margin: auto;
 }
+.content3{
+	max-width: 450px;
+	margin: auto;	
+}
 @media (max-height: 800px){
 	.text-content{
 		margin: 0px;
 	}
+}
+.header__back-icon {
+	width: 100%;
+}
+.header {
+	margin: 20px 0px;
+}
+.fa-arrow-left {
+	font-size: 25px;
+}
+.header__image {
+	width: 400px;
+	height: 400px;
+	margin-left: 12%;
+}
+.header__title {
+	font-weight: bold;
+	font-size: 45px;
+	text-align: center;
+	font-family: sans-serif;
+	white-space: normal; 
+	margin: 0px;
+}
+.regestration {}
+.regestraation__button {
+	text-align: center;
+	width: 100%;
+	padding: 25px 0px;
+	margin: 10px 0px;
+	border-radius: 15px;
+	border-color: rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+.divider {
+	text-align: center;
+	font-family: sans-serif;
+	margin: 8% 0px;
+}
+.geader__back-icon:active {
+	color: black;
 }

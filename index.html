@@ -6,18 +6,19 @@
 	<title>Welcome!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://kit.fontawesome.com/aecd654eb6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="content1" style="display: none;">
 		
 	</div>
-	<div class="content2" style="display: block;">
+	<div id="content2" class="content2" style="display: block;">
 		<div id="slider" class="slider">
 			<div class="slider__content">
 				<div id="slider__body" class="slider__body" style="left: 0px;">
-					<img src="images/01.png" alt="" class="slider__image">
-					<img src="images/02.png" alt="" class="slider__image">
-					<img src="images/03.png" alt="" class="slider__image">	
+					<img src="images/content2/01.png" alt="" class="slider__image">
+					<img src="images/content2/02.png" alt="" class="slider__image">
+					<img src="images/content2//03.png" alt="" class="slider__image">	
 				</div>
 			</div>
 		</div>
@@ -30,7 +31,8 @@
 					Order some food and be happy!</p>
 			</div>
 		</div>
-		<div class="bottom-content">
+	</div>
+	<div id="content2__bottom-content" class="bottom-content" style="display: block;">
 			<div class="page-switcher">
 			<button id="page-switcher-01" class="page-switcher__button_selected" onclick="slider(1)" ></button>
 			<button id="page-switcher-02" class="page-switcher__button" onclick="slider(2)"></button>
@@ -39,12 +41,29 @@
 		<div class="button-container">
 			<button id="next" class="next-button" onclick="slider()">Next</button>
 		</div>
-		</div>
-		
 	</div>
 		
-	<div class="content3" style="display: none;">
-		
+	<div id="content3" class="content3" style="display: none;">
+		<div class="header">
+			<div class="header__back-icon-container">
+				<a href="" class="geader__back-icon">
+					<i class="fa-solid fa-arrow-left"></i>
+				</a>
+				
+			</div>
+			<img class="header__image" src="images/content3/01.png">
+			<p class="header__title">Let`s you in</p>
+		</div>
+
+		<div class="regestration">
+			<button class="regestraation__button"></button>
+			<button class="regestraation__button"></button>
+			<button class="regestraation__button"></button>
+		</div>
+		<p class="divider">or</p>
+		<div class="button-container">
+			<button class="next-button" onclick="" style="padding: 20px 20px; border-radius: 30px;">Sign in with Phone Number</button>
+		</div>
 	</div>
 </body>
 </html>
