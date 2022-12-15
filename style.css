@@ -22,6 +22,7 @@ body{
 	height: 510px;
 	display: flex;
 	position: relative;
+	transition: left 0.2s;
 }
 .slider__image {
 
@@ -70,6 +71,7 @@ body{
 	display: block;
 }
 .next-button {
+	box-shadow: 0px 0px 10px rgba(27, 172, 75, 0.6);
 	background-color: #1bac4b;
 	border-width: 0px;
 	border-radius: 20px;
@@ -79,6 +81,7 @@ body{
 	margin: 20px auto;
 	position: relative;
 	display: block;
+	font-size: 16px;
 }
 .text-content__text {
 	text-align: center;
@@ -102,14 +105,19 @@ button:visited{
 		margin: 0px;
 	}
 }
+.header__back-icon-container{
+		width: 80%;
+		margin: auto;
+}
 .header__back-icon {
-	width: 100%;
 }
 .header {
+	padding-top: 30px;
 	margin: 20px 0px;
 }
 .fa-arrow-left {
 	font-size: 25px;
+	color: black;
 }
 .header__image {
 	width: 400px;
@@ -128,17 +136,31 @@ button:visited{
 .regestraation__button {
 	text-align: center;
 	width: 100%;
-	padding: 25px 0px;
+	padding: 5px 0px;
 	margin: 10px 0px;
 	border-radius: 15px;
-	border-color: rgba(0, 0, 0, 0.1);
+	border-color: rgba(179, 179, 179, 0.1);
 	background-color: white;
+	display: block;
+	font-size: 20px;
+	font-family: sans-serif;
 }
 .divider {
 	text-align: center;
 	font-family: sans-serif;
 	margin: 8% 0px;
+	width: 100%;
+	font-size: 17px;
 }
 .geader__back-icon:active {
 	color: black;
+}
+.regestration__text {
+	display: inline-block;
+}
+.line{
+	letter-spacing: -2px;
+	display: inline;
+	color: rgba(0, 0, 0, 0.1);
+	text-align: center;
 }
